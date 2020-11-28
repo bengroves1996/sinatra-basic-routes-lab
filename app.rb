@@ -1,4 +1,21 @@
 require_relative 'config/environment'
 
 class App < Sinatra::Base
+    get '/' do
+        "Hello, World!"
+    end 
+    
+    get '/name' do
+        "My name is Ben"
+    end 
+
+    get '/hometown' do
+        "My hometown is Hollis"
+    end 
+
+    get '/favorite-song' do
+        "My favorite song is the Hamster Song"
+    end 
+    
+
 end
